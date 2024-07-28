@@ -1,0 +1,6 @@
+复现Speculative Decoding with Big Little Decoder实验主要呈现如下内容：
+1.在Machine Translation 数据集上使用mT5 baseline大模型以及对应的BiLD (Unaligned）和BiLD (Aligned)模型 比较BLEU分数和latency以及在Summarization 数据集上使用T5 baseline大模型
+以及对应的BiLD (Unaligned）和BiLD (Aligned)模型 比较ROUGE-L分数和latency
+2.在4个不同基准模型和数据集上（即翻译数据集和总结摘要数据集上使用对应的mT5模型和T5模型和对应的对齐BILD模型与未对齐BILD模型上处理单个示例的生成质量和平均端到端延迟和对应的性能指标
+3.消融实验：在IWSLT 2017 De-En数据集上用mT5模型对应的BILD模型和baseline大模型以及没有rollback策略和fallback策略的消融实验，在XSUM数据集上用T5大模型做类似的工作
+4.早期退出实验比较：用BILD策略设计的早期退出模型和vanilla inference模型作BLEU score和latency的性能对比
